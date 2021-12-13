@@ -11,7 +11,6 @@
 #' 
 #' @examples
 #' 
-#' dat <- read.csv("data/nhanes_example.csv")
 #' 
 #' @importFrom Rdpack reprompt
 #' 
