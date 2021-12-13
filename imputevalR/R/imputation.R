@@ -5,17 +5,21 @@
 #' by imputed values. 
 #' 
 #' @param df A data.frame for which imputed data sets should be generated
+#' @param nchains The number of chains (ie number of imputed datasets) to generate
+#' @param niter The number of iterations to complete in each chain (default is 100 for convergence)
 #' 
 #' @return A list (\code{returnSets}) that contains 5 imputed data.frames with missing values 
 #' that were originally in df with imputed values based on the predicted imputed values
 #' 
 #' @examples
-#' 
+#' complete_data <- read.csv("data/imputed_nhanes.csv")
+#' miss_data <- imputevalR::makeNA(complete_data, proportionNA = 0.2)
+#' imputed <- imputer(miss_data, nchains = 1, niter = 5)
 #' 
 #' @importFrom Rdpack reprompt
 #' 
 #' @export
-imputer <- function(df) {
+imputer <- function(df, nchains = 5, niter = 100) {
   
   colnum <- length(df[1,])
   rownum <- length(df[,1])
@@ -26,39 +30,32 @@ imputer <- function(df) {
   datType <- numeric()
   
   for (i in 1 : colnum) {
-    
     if (length(unique(df[,i])) <= 3) {
       datType[i] <- 2
     } else {
       datType[i] <- 1
     }
-    
   }
   
   ### get the filled dataset
   dsets <- list()
   
   ############### will return 5 imputed dataset
-  for (j in 1:5) {
-    
+  for (j in 1:nchains) {
     dfNew <- df
-    
+
     for (i in 1 : colnum) {
-      
       misInd <- which(is.na(dfNew[,i]) == TRUE)
       pct <- runif(length(misInd), min = 0, max = 1)
       impVal <- quantile(dfNew[,i], pct, na.rm = TRUE)
       dfNew[which(is.na(dfNew[,i]) == TRUE), i] <- impVal
-      
+
       if (datType[i] == 2) {
         dfNew[,i] <- round(dfNew[,i])
       }
-      
     }
     
     dsets[[j]] <- dfNew
-    
-    
   }
   
   returnSets <- list()
@@ -70,7 +67,7 @@ imputer <- function(df) {
     startDt <- dsets[[chain]]
     
     ### number of iterations
-    for (iter in 1 : 100) {
+    for (iter in 1 : niter) {
       print(iter)
       for (var in 1 : colnum) {
         
@@ -86,7 +83,6 @@ imputer <- function(df) {
           } else {
             form <-  paste0(form, x[p])
           }
-          
         }
         
         misList <- which(misRcd[,var] == TRUE)
@@ -94,12 +90,10 @@ imputer <- function(df) {
         ### continuous variable
         if (datType[var] == 1) {
           
-          
           model1 <- lm(formula = form, data = startDt)
           intervals <- predict(model1, newdata = startDt[misList,], interval = "prediction")
           #startDt[misList, var] <- intervals[,1]
           for (k in 1 : length(misList)) {
-            
             
             ### sample from the predicted distribution (i think this is the conditional distribution)
             estVal <- rnorm(1, mean = intervals[k,1], sd = (intervals[k,1] - intervals[k,2])/1.96)
@@ -110,8 +104,6 @@ imputer <- function(df) {
             bmiMean[iter] <- mean(startDt[misList, var])
             #bmiMean[iter] <- startDt[misList[1], var]
           }
-          
-          
         } else {
           ### binary variables
           model2 <- glm(formula = form, data = startDt, family = binomial(link = "logit"))
@@ -122,15 +114,12 @@ imputer <- function(df) {
             estVal <- rbinom(n = 1, size = 1, prob = p1[k])
             startDt[misList[k], var] <- estVal
           }
-          
-          
         } 
       }
     }
+
     returnSets[[chain]] <- startDt
-    
-    
-    
   }
+
   return(returnSets)
 }
