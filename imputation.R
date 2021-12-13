@@ -89,10 +89,7 @@ imputer <- function(df) {
             startDt[misList[k], var] <- estVal
           }
           
-          if (var == 1) {
-            bmiMean[iter] <- mean(startDt[misList, var])
-            #bmiMean[iter] <- startDt[misList[1], var]
-          }
+
           
           
         } else {
