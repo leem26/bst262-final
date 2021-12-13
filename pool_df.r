@@ -32,6 +32,8 @@ pool_df <- function(dfList){
   
   colnames(finalDF) <- colnames(dfList[[1]])
   
+  rownames(finalDF) <- rownames(dfList[[1]])
+  
   return(finalDF)
   
 }
