@@ -1,0 +1,9 @@
+compare_by_cell         Squared error between means for all cells in a
+                        dataset
+compare_by_column       Squared error between means for all columns in
+                        a dataset
+imputer                 Run Imputation Procedure and Generate Imputed
+                        Datasets
+makeNA                  Set random values in a data frame to missing
+nhanes                  Example NHANES data with no missing values
+pool_df                 Pool imputed data frame results

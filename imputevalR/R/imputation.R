@@ -19,11 +19,12 @@
 #' that were originally in df with imputed values based on the predicted imputed values
 #' 
 #' @examples
-#' complete_data <- read.csv("data/imputed_nhanes.csv")
-#' miss_data <- imputevalR::makeNA(complete_data, proportionNA = 0.2)
+#' data(nhanes)
+#' miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 #' imputed <- imputer(miss_data, nchains = 1, niter = 5)
 #' 
 #' @importFrom Rdpack reprompt
+#' @import stats
 #' 
 #' @export
 imputer <- function(df, nchains = 5, niter = 100) {

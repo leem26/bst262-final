@@ -1,0 +1,28 @@
+Package: imputevalR
+Title: Multiple Imputation of Missing Data Using Predictive Sampling
+Version: 0.1
+Date: 2021-12-15
+Authors@R: c(
+    person("Yijing", "Feng",        email = "yfeng@g.harvard.edu", role = c("aut", "cre")),
+    person("Jenny",  "Jin",         email = "wenyujin@hsph.harvard.edu", role = c("aut")),
+    person("Matt",   "Lee",         email = "mlee8@g.harvard.edu", role = c("aut")),
+    person("Meg",    "Salvia",      email = "msalvia@g.harvard.edu", role = c("aut")),
+    person("Jose",   "Villa-Uribe", email = "joselvilla@gmail.com", role = c("aut")),
+    person("Qingru", "Xu",          email = "qingru_xu@hsph.harvard.edu", role = c("aut")))
+Description: imputvalR contains methods to impute all missing values in a data frame for all variables in the data, so long as the variables are either continuous or binary. The imputation uses a Gibbs sampler to draw from the predictive distributions of the variable of interest, conditional on all other variables in the data set, and then returns a list of data.frames that can be used to complete pooled regression analyses (e.g. using Rubin's rules) or other sample statistics. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+LazyData: true
+Imports: Rcpp (>= 1.0.7), methods, Rdpack, stats
+Depends: R (>= 2.10)
+NeedsCompilation: no
+Packaged: 2021-12-14 04:58:26 UTC; matthewlee
+Author: Yijing Feng [aut, cre],
+  Jenny Jin [aut],
+  Matt Lee [aut],
+  Meg Salvia [aut],
+  Jose Villa-Uribe [aut],
+  Qingru Xu [aut]
+Maintainer: Yijing Feng <yfeng@g.harvard.edu>
