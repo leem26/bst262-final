@@ -3,12 +3,14 @@ setwd(dirname(parent.frame(2)$ofile))
 
 # load mice
 library(mice)
+library(miceadds)
 
-# source all the functions
-source("compare_data.r")
-source("imputation.R")
-source("missingness.r")
-source("pool_df.r")
+# source all the functions (from package)
+source.all("../imputevalR/R/")
+# source("compare_data.r")
+# source("imputation.R")
+# source("missingness.r")
+# source("pool_df.r")
 
 # df = the data frame
 # num = the number of simulations
@@ -22,6 +24,8 @@ simulate <- function(df, num, miss){
   # go through num simulations
   for (i in 1:num){
     
+    cat(paste0("SIMULATION NUMBER: ", i, "/", num, "\n"))
+
     # create a copy of the data frame
     df_orig <- df[,]
     
@@ -29,7 +33,7 @@ simulate <- function(df, num, miss){
     df_miss <- makeNA(df_orig, miss)
     
     # impute and pool the imputed data sets to make one data frame with our method
-    imputed_list <- imputer(df_miss)
+    imputed_list <- imputer(df_miss, nchains = 2, niter = 50)
     df_imp <- pool_df(imputed_list)
     
     # *************** now impute with mice
@@ -38,7 +42,7 @@ simulate <- function(df, num, miss){
     df_miss$gender <- as.factor(df_miss$gender)
     df_miss$white <- as.factor(df_miss$white)
     
-    init = mice(df_miss, maxit=0) 
+    init = mice(df_miss, maxit=0, print=FALSE) 
     meth = init$method
     predM = init$predictorMatrix
     
@@ -47,7 +51,7 @@ simulate <- function(df, num, miss){
     
     meth[c("gender", "white")] = "logreg" 
     
-    df_mice = mice(df_miss, method=meth, predictorMatrix=predM, m=5)
+    df_mice = mice(df_miss, method=meth, predictorMatrix=predM, m=5, print = FALSE)
     
     df_mice <- complete(df_mice)
     
@@ -86,7 +90,7 @@ hanes_full <- read.csv("../raw_data/imputed_nhanes.csv")
 hanes_full <- hanes_full[1:100,]
 
 # ******** run 3 simulations with 0.1 values missing
-sim_diff <- simulate(hanes_full, 20, 0.1)
+sim_diff <- simulate(hanes_full, num = 100, 0.1)
 
 # ******** make a histogram of the simulation differences for bmi
 hist(sim_diff$bmi)
