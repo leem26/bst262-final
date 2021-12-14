@@ -1,6 +1,7 @@
 ###############################################################################
 #
-# Main Imputation algorithm for missing data
+# Methods to implement imputation for completely non-missing data
+# (i.e. simulation vignette methods)
 #
 ###############################################################################
 

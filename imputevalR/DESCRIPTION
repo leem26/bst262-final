@@ -1,12 +1,30 @@
 Package: imputevalR
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Title: Multiple Imputation of Missing Data Using Predictive Sampling 
+Version: 0.1
+Date: 2021-12-15
+Authors@R: c(
+    person("Yijing", "Feng",        email = "yfeng@g.harvard.edu", role = c("aut", "cre")),
+    person("Jenny",  "Jin",         email = "wenyujin@hsph.harvard.edu", role = c("aut", "cre"))
+    person("Matt",   "Lee",         email = "mlee8@g.harvard.edu", role = c("aut", "cre"))
+    person("Meg",    "Salvia",      email = "msalvia@g.harvard.edu", role = c("aut", "cre"))
+    person("Jose",   "Villa-Uribe", email = "joselvilla@gmail.com", role = c("aut", "cre"))
+    person("Qingru", "Xu",          email = "qingru_xu@hsph.harvard.edu", role = c("aut", "cre"))
+)
+
+Description: \code{imputvalR} contains methods to impute all missing values in a data frame
+for all variables in the data, so long as the variables are either continuous or binary. The imputation
+uses a Gibbs sampler to draw from the predictive distributions of the variable of interest, conditional
+on all other variables in the data set, and then returns a list of data.frames that can be used
+to complete pooled regression analyses (e.g. using Rubin's rules) or other sample statistics. 
+
+License: MIT + file LICENSE
 Encoding: UTF-8
+
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+
+Imports: 
+    Rcpp (>= 1.0.7),
+    methods, 
+    Rdpack,
+    stats
