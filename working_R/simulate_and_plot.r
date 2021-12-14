@@ -64,7 +64,7 @@ simulate <- function(df, num, miss){
     # add the difference to our data frame of differences
     differences <- rbind(differences, diff)
     
-    # remove the variables to star the next cycle
+    # remove the variables to start the next cycle
     rm(df_orig, df_miss, df_imp, df_mice)
     
   }
@@ -83,10 +83,10 @@ hanes_full <- read.csv("../raw_data/imputed_nhanes.csv")
 
 
 # ******** restrict to 50 rows.
-hanes_full <- hanes_full[1:50,]
+hanes_full <- hanes_full[1:100,]
 
 # ******** run 3 simulations with 0.1 values missing
-sim_diff <- simulate(hanes_full, 3, 0.1)
+sim_diff <- simulate(hanes_full, 20, 0.1)
 
 # ******** make a histogram of the simulation differences for bmi
 hist(sim_diff$bmi)
