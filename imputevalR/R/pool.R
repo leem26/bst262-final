@@ -5,7 +5,7 @@
 #' have been pooled across the imputations using Rubin's rules
 #' 
 #' @importFrom Rdpack reprompt
-#' @import stats
+#' @importFrom stats runif quantile glm lm predict rnorm binomial rbinom 
 #' @reference https://bookdown.org/mwheymans/bookmi/rubins-rules.html
 #' 
 #' @export

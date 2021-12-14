@@ -76,11 +76,11 @@ No file Rd2.aux.
 ty)) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd) [1{/usr/local/te
-xlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+xlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
 No file Rd2.ind.
-[5]
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.aux)
+[6]
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -94,7 +94,7 @@ xlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (5 pages, 78986 bytes).
+Output written on Rd2.pdf (6 pages, 83619 bytes).
 Transcript written on Rd2.log.
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -163,40 +163,41 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 Writing index file Rd2.idx
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.aux)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.aux)
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
 ty))
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.out)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.out) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.out)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.out)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.toc) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/p
-dftex.map}] [2] [3] [4]
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.toc) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap
+/pdftex.map}] [2] [3] [4] [5]
 No file Rd2.ind.
-[5]
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.aux) ){/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.e
-nc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-
-zi4r.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
-b></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (5 pages, 79983 bytes).
+[6]
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.aux) ){/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r
+.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.en
+c}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
+a-zi4r.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
+pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (6 pages, 84858 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2021] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (7 entries accepted, 0 rejected).
-Sorting entries....done (21 comparisons).
-Generating output file Rd2.ind....done (27 lines written, 0 warnings).
+Scanning input file Rd2.idx....done (8 entries accepted, 0 rejected).
+Sorting entries....done (24 comparisons).
+Generating output file Rd2.ind....done (31 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex)
@@ -266,27 +267,28 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 Writing index file Rd2.idx
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.aux)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.aux)
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
 ty))
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.out)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.out) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.out)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.out)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.toc) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/p
-dftex.map}] [2] [3] [4]
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.ind [5] [6])
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.aux)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.toc) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap
+/pdftex.map}] [2] [3] [4] [5]
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.ind [6] [7])
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -301,12 +303,12 @@ live/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (6 pages, 88350 bytes).
+Output written on Rd2.pdf (7 pages, 92586 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2021] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (7 entries accepted, 0 rejected).
-Sorting entries....done (21 comparisons).
-Generating output file Rd2.ind....done (27 lines written, 0 warnings).
+Scanning input file Rd2.idx....done (8 entries accepted, 0 rejected).
+Sorting entries....done (24 comparisons).
+Generating output file Rd2.ind....done (31 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex)
@@ -376,37 +378,38 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 Writing index file Rd2.idx
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1ptm.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.aux)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.aux)
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
 ty))
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.out)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.out) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.out)
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.out)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd)
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.toc) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/p
-dftex.map}] [2] [3] [4]
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.ind [5] [6])
-(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpDKSZbT/Rd2pdf2744
-5f92ec8/Rd2.aux) ){/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.e
-nc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-
-zi4r.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (6 pages, 88526 bytes).
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.toc) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap
+/pdftex.map}] [2] [3] [4] [5]
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.ind [6] [7])
+(/private/var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T/RtmpG6fF1t/Rd2pdf1410
+552adab0c/Rd2.aux) ){/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r
+.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.en
+c}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
+a-zi4r.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.p
+fb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (7 pages, 92844 bytes).
 Transcript written on Rd2.log.
 Saving output to ‘imputevalR-manual.pdf’ ...
 Done
-You may want to clean up by 'rm -Rf /var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T//RtmpDKSZbT/Rd2pdf27445f92ec8'
+You may want to clean up by 'rm -Rf /var/folders/b1/9trgx0pd2yxgc4b6c32r9km40000gn/T//RtmpG6fF1t/Rd2pdf1410552adab0c'

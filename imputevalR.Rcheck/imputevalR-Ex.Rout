@@ -50,8 +50,17 @@ Type 'q()' to quit R.
 > ### ** Examples
 > 
 > data(nhanes)
+> nhanes <- nhanes[1:100, ] # subset for speed
 > miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 > imputed <- imputer(miss_data, nchains = 1, niter = 5)
+Warning: glm.fit: algorithm did not converge
+Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+Warning: glm.fit: algorithm did not converge
+Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+Warning: glm.fit: algorithm did not converge
+Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+Warning: glm.fit: algorithm did not converge
+Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
 > 
 > 
 > 
@@ -71,7 +80,7 @@ Type 'q()' to quit R.
 > 
 > ### ** Examples
 > 
-> data(nhanes)
+> data(nhanes, package = "imputevalR")
 > miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 > 
 > 
@@ -79,12 +88,37 @@ Type 'q()' to quit R.
 > 
 > base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
 > base::cat("makeNA", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+> cleanEx()
+> nameEx("simulate_nhanes_study")
+> ### * simulate_nhanes_study
+> 
+> flush(stderr()); flush(stdout())
+> 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: simulate_nhanes_study
+> ### Title: Simulation study to evaluate imputer() vs. MICE using predictive
+> ###   mean matching
+> ### Aliases: simulate_nhanes_study
+> 
+> ### ** Examples
+> 
+> # NOT RUN FOR RUNTIME
+> ## Not run: 
+> ##D library(imputevalR)
+> ##D simulate_nhanes_study(numSims = 20, proportionNA = 0.2)
+> ## End(Not run)
+> 
+> 
+> 
+> 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("simulate_nhanes_study", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > ### * <FOOTER>
 > ###
 > cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  6.983 0.096 7.23 0 0 
+Time elapsed:  0.979 0.054 1.208 0 0 
 > grDevices::dev.off()
 null device 
           1 

@@ -31,6 +31,7 @@ base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 ### ** Examples
 
 data(nhanes)
+nhanes <- nhanes[1:100, ] # subset for speed
 miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 imputed <- imputer(miss_data, nchains = 1, niter = 5)
 
@@ -52,7 +53,7 @@ base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 
 ### ** Examples
 
-data(nhanes)
+data(nhanes, package = "imputevalR")
 miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 
 
@@ -60,6 +61,31 @@ miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 
 base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
 base::cat("makeNA", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+cleanEx()
+nameEx("simulate_nhanes_study")
+### * simulate_nhanes_study
+
+flush(stderr()); flush(stdout())
+
+base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+### Name: simulate_nhanes_study
+### Title: Simulation study to evaluate imputer() vs. MICE using predictive
+###   mean matching
+### Aliases: simulate_nhanes_study
+
+### ** Examples
+
+# NOT RUN FOR RUNTIME
+## Not run: 
+##D library(imputevalR)
+##D simulate_nhanes_study(numSims = 20, proportionNA = 0.2)
+## End(Not run)
+
+
+
+
+base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+base::cat("simulate_nhanes_study", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 ### * <FOOTER>
 ###
 cleanEx()

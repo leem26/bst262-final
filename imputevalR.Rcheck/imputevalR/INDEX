@@ -7,3 +7,5 @@ imputer                 Run Imputation Procedure and Generate Imputed
 makeNA                  Set random values in a data frame to missing
 nhanes                  Example NHANES data with no missing values
 pool_df                 Pool imputed data frame results
+simulate_nhanes_study   Simulation study to evaluate imputer() vs. MICE
+                        using predictive mean matching

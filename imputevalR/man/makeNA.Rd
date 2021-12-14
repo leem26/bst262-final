@@ -20,7 +20,7 @@ data frame, but now has values missing (set by \code{proportionNA})
 Set random values in a data frame to missing
 }
 \examples{
-data(nhanes)
+data(nhanes, package = "imputevalR")
 miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 
 }

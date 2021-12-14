@@ -15,10 +15,10 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 LazyData: true
-Imports: Rcpp (>= 1.0.7), methods, Rdpack, stats
+Imports: Rcpp (>= 1.0.7), methods, Rdpack, stats, mice, utils
 Depends: R (>= 2.10)
 NeedsCompilation: no
-Packaged: 2021-12-14 04:58:26 UTC; matthewlee
+Packaged: 2021-12-14 22:51:43 UTC; matthewlee
 Author: Yijing Feng [aut, cre],
   Jenny Jin [aut],
   Matt Lee [aut],

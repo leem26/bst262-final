@@ -1,5 +1,6 @@
 # Set source directory to location of this file
-setwd(dirname(parent.frame(2)$ofile))
+# setwd(dirname(parent.frame(2)$ofile))
+setwd("/Volumes/GoogleDrive-101809232694958266345/My Drive/Matt/School/PhD /2021-2022/BST 262/Project/bst262-final/working_R/")
 
 # load mice
 library(mice)
@@ -33,7 +34,8 @@ simulate <- function(df, num, miss){
     df_miss <- makeNA(df_orig, miss)
     
     # impute and pool the imputed data sets to make one data frame with our method
-    imputed_list <- imputer(df_miss, nchains = 2, niter = 50)
+    # 3 chains, 100 iterations each
+    imputed_list <- imputer(df_miss, nchains = 3, niter = 100)
     df_imp <- pool_df(imputed_list)
     
     # *************** now impute with mice
@@ -76,23 +78,26 @@ simulate <- function(df, num, miss){
   names(differences) <- names(df)
   
   return(differences)
-  
-  
-  
 }
 
 
-# read hanes data
-hanes_full <- read.csv("../raw_data/imputed_nhanes.csv")
+# # read hanes data
+# hanes_full <- read.csv("../raw_data/imputed_nhanes.csv")
 
 
-# ******** restrict to 50 rows.
-hanes_full <- hanes_full[1:100,]
+# # ******** restrict to 50 rows.
+# hanes_full <- hanes_full[1:100,]
 
-# ******** run 3 simulations with 0.1 values missing
-sim_diff <- simulate(hanes_full, num = 100, 0.1)
+# run simulation on full dataset
+load(file = "../imputevalR/data/nhanes.rda") # from package data folder
+
+# ******** run 100 simulations with 0.2 values missing
+sim_diff <- simulate(df = nhanes, num = 20, miss = 0.2)
+
+
+saveRDS(sim_diff, "sim_diff_100.Rdata")
 
 # ******** make a histogram of the simulation differences for bmi
-hist(sim_diff$bmi)
+# hist(sim_diff$bmi)
 
 

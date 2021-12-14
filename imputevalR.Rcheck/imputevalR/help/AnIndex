@@ -4,3 +4,4 @@ imputer	imputer
 makeNA	makeNA
 nhanes	nhanes
 pool_df	pool_df
+simulate_nhanes_study	simulate_nhanes_study

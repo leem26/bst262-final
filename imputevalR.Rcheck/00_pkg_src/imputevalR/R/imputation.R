@@ -20,11 +20,12 @@
 #' 
 #' @examples
 #' data(nhanes)
+#' nhanes <- nhanes[1:100, ] # subset for speed
 #' miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 #' imputed <- imputer(miss_data, nchains = 1, niter = 5)
 #' 
 #' @importFrom Rdpack reprompt
-#' @import stats
+#' @importFrom stats runif quantile glm lm predict rnorm binomial rbinom qnorm
 #' 
 #' @export
 imputer <- function(df, nchains = 5, niter = 100) {

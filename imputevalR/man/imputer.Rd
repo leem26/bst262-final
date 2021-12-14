@@ -24,6 +24,7 @@ by imputed values.
 }
 \examples{
 data(nhanes)
+nhanes <- nhanes[1:100, ] # subset for speed
 miss_data <- imputevalR::makeNA(nhanes, proportionNA = 0.2)
 imputed <- imputer(miss_data, nchains = 1, niter = 5)
 
