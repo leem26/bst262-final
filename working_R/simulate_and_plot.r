@@ -100,4 +100,24 @@ saveRDS(sim_diff, "sim_diff_100.Rdata")
 # ******** make a histogram of the simulation differences for bmi
 # hist(sim_diff$bmi)
 
+plot_data = sim_diff %>% select(-gender, -white)
+plot_data$sim_num = 1:20
+
+# reshape to long
+p_data_long <- reshape2::melt(plot_data, id.vars = "sim_num")
+
+p_data_long <- p_data_long %>% group_by(variable) %>% mutate(mean = mean(value))
+
+ggplot(p_data_long, aes(x = sim_num, y = value, color = variable)) + 
+  geom_point() + 
+  geom_abline(aes(slope = 0, intercept = mean, color = variable)) + 
+  facet_wrap(vars(variable)) + 
+  theme_bw() +
+  theme(legend.position = "none") + 
+  scale_color_viridis(discrete = TRUE) + 
+  labs(x = "Simulation Number", y = "Relative Difference, imputer() vs. mice() compared to true values") 
+
+
+
+
 
